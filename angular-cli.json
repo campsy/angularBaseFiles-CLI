@@ -1,0 +1,58 @@
+{
+
+  "project": {
+    "version": "1.0.0-beta.28.3",
+    "name": "agproject"
+  },
+
+  "apps": [
+    {
+      "root": "development",
+      "outDir": "release",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+
+  "lint": [
+    {
+      "files": "development/**/*.ts",
+      "project": "developmentrc/tsconfig.json"
+    }
+  ],
+
+  "defaults": {
+    "styleExt": "css",
+    "prefixInterfaces": false,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+
+}
